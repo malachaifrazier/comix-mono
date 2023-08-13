@@ -83,8 +83,8 @@ Once the repo is cloned, you need to run the following commands to install all t
 ```
 $ bundle install
 $ yarn install
-$ rails db:create db:migrate
-$ rails db:seed
+$ bundle exec rails assets:precompile # This is required for the importmap to be generated
+$ bundle exec rails db:create db:migrate db:seed
 ```
 
 The easiest way to start the server is to install the foreman gem and run the server using your procfile.
