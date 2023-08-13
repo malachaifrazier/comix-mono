@@ -55,6 +55,7 @@ gem "flipper"
 gem "flipper-active_record"
 gem "flipper-ui"
 gem "meta-tags"
+gem 'pg_search'
 gem "chartkick"
 gem "groupdate"
 gem "httparty"
@@ -104,4 +105,3 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
-# gem "graphiql-rails", group: :development
