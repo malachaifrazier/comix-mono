@@ -12,7 +12,7 @@ jobs:
           POSTGRES_USER: postgres
           POSTGRES_DB: comix_test
           POSTGRES_PASSWORD: postgres
-        ports: 
+        ports:
           - 5432:5432
         options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5
 
@@ -24,11 +24,11 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
-          ruby-version: 3.1.1
+          ruby-version: 3.2.2
 
       - name: Install gems
         run: bundle install
-        
+
       - name: Setup test database
         env:
           RAILS_ENV: test
